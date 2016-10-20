@@ -24,8 +24,6 @@ func named(name string, color string) Logger {
 			return
 		}
 
-		//ansi.DisableColors(true)
-
 		// add newline
 		format = strings.TrimRight(format, " \n\t")
 		message := fmt.Sprintf(format, args...)
